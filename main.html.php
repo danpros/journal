@@ -14,7 +14,7 @@
 <?php if (isset($is_tag)):?>
 	<section class="gh-pagehead">
 		<header class="gh-pagehead-content">
-			<div class="gh-tag-label">Tag</div>
+			<div class="gh-tag-label"><?php echo i18n('Tags');?></div>
 			<h1 class="gh-tag-name gh-pagehead-title"><?php echo $tag->title;?></h1>
 			<div class="gh-tag-description gh-pagehead-description">
 				<?php echo $tag->description;?> 
@@ -38,7 +38,7 @@
 <?php if (isset($is_search)):?>
 	<section class="gh-pagehead">
 		<header class="gh-pagehead-content">
-			<div class="gh-tag-label">Search</div>
+			<div class="gh-tag-label"><?php echo i18n('Search');?></div>
 			<h1 class="gh-tag-name gh-pagehead-title"><?php echo $search->title;?></h1>
 			<div class="gh-tag-description gh-pagehead-description">
 				<?php echo $search->description;?> 

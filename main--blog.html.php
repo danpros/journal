@@ -201,7 +201,7 @@
 				<a class="gh-topic-item" href="<?php echo site_url() . 'category/' . $tx[0]; ?>">
 					<h3 class="gh-topic-name"><?php echo $tx['1'];?></h3>
 					<span class="gh-topic-count">
-					<?php echo get_categorycount($tx['0']) . ' ' . i18n('Posts') ;?>
+					<?php echo $tx['2'] . ' ' . i18n('Posts') ;?>
 					</span>
 				</a>
 				<?php endif; ?>
@@ -229,7 +229,7 @@
 			</section>	
 
 			<section class="gh-section">
-				<h3 class="gh-section-title">Tag Cloud</h3>
+				<h3 class="gh-section-title"><?php echo i18n('Tags');?></h3>
 				<div class="gh-topic">
 					<?php echo tag_cloud();?>
 				</div>
