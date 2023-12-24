@@ -62,5 +62,6 @@
         </footer>
     </div>
     <script src="<?php echo theme_path() ?>js/main.js"></script>
+	<?php if (analytics()): ?><?php echo analytics() ?><?php endif; ?>
 </body>
 </html>
