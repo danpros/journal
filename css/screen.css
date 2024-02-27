@@ -1902,11 +1902,11 @@ blockquote.kg-blockquote-alt {
 }
 
 .tag-cloud-link {
- border-bottom:1px solid var(--color-light-gray);
+     border-bottom:1px solid var(--color-light-gray);
 }
 
 .tags-label {
- color:var(--ghost-accent-color);
+     color:var(--ghost-accent-color);
 }
 
 .gh-copyright {
@@ -1914,49 +1914,19 @@ blockquote.kg-blockquote-alt {
 }
 
 .gh-card-excerpt a.more-link {
- color:var(--ghost-accent-color);
- text-decoration:underline;
- word-break:break-word;
+     color:var(--ghost-accent-color);
+     text-decoration:underline;
+     word-break:break-word;
 }
 
 .tags a {
-	text-decoration:none;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  margin:0;
-  padding:0;
-}
-
-.dropdown-menu a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-menu li { list-style-type: none}
-
-
-.dropdown-menu a:hover, .dropdown-menu li.active {background-color: #ddd;}
-
-.dropdown:hover .dropdown-menu {display: block;}
-
-.gh-head-menu:not(.mobile) .dropdown-toggle .caret {
- content: url("data:image/svg+xml,%3Csvg class='text-gray-400 ml-1 h-5 w-5 group-hover:text-gray-500' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'%3E%3C/path%3E%3C/svg%3E");
- position: relative;
- left: 0.5em;
- color: #666;
- width:15px;
- height:15px
+    text-decoration:none;
 }
 
 .footer-link {
-	margin: auto 2px;
+    margin: auto 2px;
+}
+
+.dropdown-menu {
+    display:none;
 }
