@@ -1930,3 +1930,7 @@ blockquote.kg-blockquote-alt {
 .dropdown-menu {
     display:none;
 }
+
+.toc a {
+    text-decoration:none;
+}

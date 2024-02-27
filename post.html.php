@@ -64,7 +64,7 @@
 				<?php endif; ?>
 			</div>
 			<?php endif; ?>
-			<div class="related-posts" style="padding-top:4rem"><h2 class="gh-section-title"><?php echo i18n('Related_posts');?></h2>
+			<div class="related-posts" style="padding-top:4rem"><strong class="gh-section-title"><?php echo i18n('Related_posts');?></strong>
 			<?php echo get_related($p->related);?></div>
         </div>
 
