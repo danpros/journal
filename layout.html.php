@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html lang="<?php echo blog_language();?>">
 <head>
-	<?php echo head_contents();?>
-	<title><?php echo $title;?></title>
-	<meta name="description" content="<?php echo $description; ?>"/>
-	<link rel="canonical" href="<?php echo $canonical; ?>" />
+    <?php echo head_contents();?>
+    <title><?php echo $title;?></title>
+    <meta name="description" content="<?php echo $description; ?>"/>
+    <link rel="canonical" href="<?php echo $canonical; ?>" />
+    <?php echo $metatags;?>
     <link rel="stylesheet" href="<?php echo theme_path() ?>css/fonts.css">
     <link rel="stylesheet" href="<?php echo theme_path() ?>css/cards.css">
     <link rel="stylesheet" href="<?php echo theme_path() ?>css/screen.css">
