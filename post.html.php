@@ -8,7 +8,7 @@
 				<a class="gh-article-tag" href="<?php echo $p->categoryUrl;?>"><?php echo $p->categoryTitle;?></a> <?php echo i18n('by');?> <a href="<?php echo $p->authorUrl;?>"><?php echo $p->authorName;?></a>
 				<span class="bull"> • </span>
 				<span class="gh-card-duration"><?php echo $p->readTime; ?> min read</span>
-				<?php if (login()):?><span class="bull"> • </span> <a class="gh-card-date" href="<?php echo $p->url;?>/edit?destination=post">Edit</a><?php endif;?>
+				<?php if (authorized($p)):?><span class="bull"> • </span> <a class="gh-card-date" href="<?php echo $p->url;?>/edit?destination=post">Edit</a><?php endif;?>
 			</span>
 			
 			<?php if (!empty($p->link)) { ?>

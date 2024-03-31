@@ -30,7 +30,7 @@
 						<span class="comments-link"><a href="<?php echo $f->url ?>#comments"><span><fb:comments-count href=<?php echo $f->url ?>></fb:comments-count> <?php echo i18n('Comments');?></span></a></span>
 					<?php } ?>
 					
-					<?php if (login()):?><span class="bull"> • </span> <a class="gh-card-date" href="<?php echo $f->url;?>/edit?destination=post">Edit</a><?php endif;?>
+					<?php if (authorized($f)):?><span class="bull"> • </span> <a class="gh-card-date" href="<?php echo $f->url;?>/edit?destination=post">Edit</a><?php endif;?>
 				</footer>
 			
 		</article>
@@ -96,7 +96,7 @@
 							<span class="comments-link"><a href="<?php echo $p->url ?>#comments"><span><fb:comments-count href=<?php echo $p->url ?>></fb:comments-count> <?php echo i18n('Comments');?></span></a></span>
 						<?php } ?>
 						
-						<?php if (login()):?><span class="bull"> • </span> <a class="gh-card-date" href="<?php echo $p->url;?>/edit?destination=post">Edit</a><?php endif;?>
+						<?php if (authorized($p)):?><span class="bull"> • </span> <a class="gh-card-date" href="<?php echo $p->url;?>/edit?destination=post">Edit</a><?php endif;?>
 					</footer>
 
 				</article>

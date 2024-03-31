@@ -3,7 +3,7 @@
 
 	<article class="gh-latest gh-card post">
 		<header class="gh-card-header">
-			<?php if (login()):?><div class="gh-article-meta">
+			<?php if (authorized($p)):?><div class="gh-article-meta">
 			<span class="gh-card-date"><a class="gh-card-date" href="<?php echo $p->url;?>/edit?destination=post">Edit</a></span>
 			</div>
 			<?php endif;?>
