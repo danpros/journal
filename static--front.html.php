@@ -18,7 +18,7 @@
 			<h2 class="gh-section-title"><?php echo i18n("Recent_posts");?></h2>
 
 			<div class="gh-feed">
-				<?php $recent = get_posts(null, 1, config('posts.perpage'));?>
+				<?php $recent = recent_posts(true, config('recent.count'));?>
 				<?php foreach ($recent as $r): ?>
 				<article class="gh-card post">
 				
@@ -57,7 +57,7 @@
 
 					<div class="gh-navigation-middle"> 
 					<?php if (config('blog.enable') === 'true'):?>
-						<a class="gh-navigation-link" href="<?php echo site_url();?>blog">
+						<a class="gh-navigation-link" href="<?php echo site_url() . blog_path();?>">
 							<span class="gh-navigation-label"><?php echo i18n('All_blog_posts');?> →</span>
 						</a>
 					<?php endif; ?>
@@ -84,7 +84,7 @@
 				</div>
 			</section>
 
-			<?php $featured = get_tag('featured', 1, config('recent.count'));?>
+			<?php $featured = recent_tag('featured', config('recent.count'), true);?>
 			<?php if (!empty($featured)):?>
 			<section class="gh-section">
 				<h3 class="gh-section-title">Featured</h3>

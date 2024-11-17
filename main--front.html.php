@@ -1,7 +1,7 @@
 <?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <div class="gh-inner">
 
-	<?php $featured = get_tag('featured', 1, config('recent.post'));?>
+	<?php $featured = recent_tag('featured', config('recent.post'), true);?>
 	<?php if (!empty($featured)):?>
 		<?php foreach ($featured as $f):?>
 		<article class="gh-latest gh-card post">
